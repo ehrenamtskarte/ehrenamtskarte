@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'graphql/configured_graphql_provider.dart';
 import 'home/home_page.dart';
 import 'identification/card_details_model.dart';
+import 'util/link_handling.dart';
 
 class App extends StatelessWidget {
   const App({Key key}) : super(key: key);
@@ -28,7 +29,7 @@ class App extends StatelessWidget {
           child: MaterialApp(
             title: 'Ehrenamtskarte',
             theme: theme,
-            home: HomePage(),
+            home: UniLinkHandler(child: HomePage()),
           )),
     );
   }
