@@ -14,9 +14,7 @@
     "natural_earth_shaded_relief": {
       "maxzoom": 6,
       "tileSize": 256,
-      "tiles": [
-        "https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
-      ],
+      "url": "https://maps.tuerantuer.org/natural_earth/tiles.json",
       "type": "raster"
     },
     "physical_stores": {
@@ -1239,8 +1237,8 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 14,
-      "maxzoom": 15,
+      "minzoom": 13,
+      "maxzoom": 14,
       "paint": {
         "fill-color": "hsl(35, 8%, 85%)",
         "fill-outline-color": {
@@ -1254,7 +1252,7 @@
       "type": "fill-extrusion",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 15,
+      "minzoom": 14,
       "layout": {"visibility": "visible"},
       "paint": {
         "fill-extrusion-color": "hsl(35, 8%, 85%)",
