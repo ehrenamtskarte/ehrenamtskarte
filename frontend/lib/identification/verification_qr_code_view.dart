@@ -42,9 +42,9 @@ class _VerificationQrCodeViewState extends State<VerificationQrCodeView> {
         _otpCode.validUntilMilliSeconds - DateTime.now().millisecondsSinceEpoch;
     return Consumer<CardDetailsModel>(
         builder: (context, cardDetailsModel, child) {
-      return Dialog(
-          insetPadding: EdgeInsets.all(16),
+      return Card(
           clipBehavior: Clip.antiAlias,
+          elevation: 0,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
           child: Padding(
@@ -58,6 +58,10 @@ class _VerificationQrCodeViewState extends State<VerificationQrCodeView> {
                           VerificationCardDetails(
                               widget.cardDetails, _otpCode.code)),
                       version: QrVersions.auto,
+                      foregroundColor:
+                          Theme.of(context).textTheme.bodyText2.color,
+                      gapless: false,
+
                       padding: const EdgeInsets.all(0.0)),
                   Positioned(
                       bottom: -24,

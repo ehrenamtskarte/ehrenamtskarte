@@ -10,7 +10,7 @@ import styled from "styled-components";
 import RegionProvider from "./RegionProvider";
 
 const client = new ApolloClient({
-    uri: 'https://api.ehrenamtskarte.app',
+    uri: 'http://localhost:7000',
     cache: new InMemoryCache()
 });
 
